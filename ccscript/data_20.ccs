@@ -1,0 +1,482 @@
+/*
+ * EarthBound Text Dump
+ * Time: 17:27:56 - 14/06/2021
+ * Generated using CCScriptWriter.
+ */
+
+command e(label) "{long label}"
+
+// Text Data
+l_0xc65f4b:
+    "@You look pretty healthy." end
+
+l_0xc65f5c:
+    "[06 69 00 {e(l_0xc65fa6)}]@Don't talk to me!{pause(15)}" linebreak
+    "  I'm on duty." next
+    "@Until I have Chief Strong's permission,{pause(15)} I can't let you through!" end
+
+l_0xc65fa6:
+    "@You're doing well.{pause(20)}  Keep it up." next
+    "@The <Town Map> can be checked out at the library." next
+    "@You can also use the map in Twoson.{pause(20)}  It's really useful." end
+
+l_0xc66002:
+    "[06 69 00 {e(l_0xc6605f)}]@The road to Twoson" linebreak
+    "  is closed." next
+    "@You can't just squeeze through road blocks,{pause(15)} either!" next
+    "@Onett is famous for roadblocks!" end
+
+l_0xc6605f:
+    "@Hey,{pause(15)} aren't you [1C 02 01]?" next
+    "@Well,{pause(15)} I got the okay from Chief Strong to let you through." next
+    "@Take care of yourself." end
+
+l_0xc660a6:
+    "[06 02 00 {e(l_0xc66392)}][06 40 00 {e(l_0xc66353)}][06 03 02 {e(l_0xc66469)}]@....." next
+    "@...I'm Frank.{pause(30)}  You are?" next
+    "@{pause(30)}C'mon,{pause(15)} can't you at least say your name?[03]" call(data_21.l_0xc683fb) "[1B 03 {e(data_21.l_0xc683de)}][1F 01 00]{window_open(1)}@<Fail-proof> Frank can't be beaten." next
+    "@Puff,{pause(10)} puff,{pause(10)} puff" linebreak
+    "  And this is{pause(15)}" linebreak
+    "  <Frankystein Mark II.>[03]{set(flag 515)}" call(data_21.l_0xc68402) "[1B 03 {e(data_21.l_0xc683de)}][1F F1 CA 00 7B 02]{pause(30)}{set(flag 64)}{window_open(1)}" goto(l_0xc66175)
+
+l_0xc66175:
+    newline
+    "@...This is my first defeat." next
+    "@<Fail-proof> Frank is now just <failure> Frank." next
+    "@I know you've been asking around,{pause(15)} so I'll tell you about Giant Step." next
+    "@It..." linebreak
+    "  seems..." linebreak
+    "  to be quite a powerful spot." next
+    "@Some kind of special power is stored there" next
+    "@that allows certain people to perform wondrous feats." next
+    "@However... a monster sucked up all the energy at that spot." next
+    "@It's difficult to get to Giant Step.{pause(20)}  That's all I know..." next
+    "@I suggest you collect more information on your own." next
+    "@The entrance to the path leading to Giant Step is" next
+    "@behind the touring entertainers' shack." next
+    "@Pirkle,{pause(15)} the Mayor of Onett,{pause(15)} has a key to the shack." next
+    "@[1C 02 01],{pause(15)} you've become stronger than I!{pause(20)}  Your adventure is just beginning...{wait}{set(flag 64)}{set(flag 697)}{set(flag 363)}{set(flag 364)}{unset(flag 365)}{set(flag 2)}" eob
+
+l_0xc66353:
+    "{counter(1)}" call(data_33.l_0xc7dc7f) "[1B 03 {e(l_0xc663fe)}]@You look much stronger.{pause(20)}  Would you like to rest?" linebreak
+    "[19 02]Yes[02] [19 02]No[02][1C 07 02][11]{clearline}[09 02 {e(l_0xc663c5)} {e(l_0xc66392)}]" goto(l_0xc66392)
+
+l_0xc66392:
+    "@[1C 02 01],{pause(15)} you've become stronger than I!{pause(20)}  Your adventure is just beginning..." end
+
+l_0xc663c5:
+    call(data_44.l_0xc915d6) call(data_44.l_0xc91582) newline
+    "@[1C 02 01],{pause(15)} you're now stronger than I!{pause(20)}  Your adventure is just beginning." end
+
+l_0xc663fe:
+    "@What?{pause(20)}  You're a friend of [1C 02 01]'s?" next
+    "@[1C 02 01] is my friend," next
+    "@however I can't remember becoming a friend of a friend of [1C 02 01]'s." next
+    "@Quit joking about a <Circle of Friends> and go home!" end
+
+l_0xc66469:
+    "@It's you again..." next
+    "@Do you really think you can beat Franky's <Frankystein Mark II>?" next
+    "[19 02]Yes[02] [19 02]No[02][1C 07 02][11]{clearline}[09 02 {e(l_0xc66523)} {e(l_0xc664ba)}]" goto(l_0xc664ba)
+
+l_0xc664ba:
+    "@Did you come here feeling not-so-fit?" next
+    "@Don't even think of looking beyond me,{pause(15)} chump." next
+    goto(l_0xc664f2)
+
+l_0xc664f2:
+    "@Go!{pause(20)}  <Frankystein Mark II>!" next
+    call(data_21.l_0xc68402) "[1B 03 {e(data_21.l_0xc683de)}]{window_open(1)}" goto(l_0xc66175)
+
+l_0xc66523:
+    "@Aren't you overconfident?" next
+    goto(l_0xc664f2)
+
+l_0xc6653b:
+    "[06 04 00 {e(l_0xc665e7)}]@Hello sir, how may I help you?{pause(30)}  ...Uh...{pause(20)}  Aren't you [1C 02 01]?" next
+    "@After our battle I became serious,{pause(15)} and have been working very hard." next
+    "@I've even been doing some training for...{pause(15)} for..." next
+    "@Well,{pause(15)} a little bit of pro wrasslin'.{pause(20)}  It's the ring for me,{pause(15)} baby..." next
+    goto(l_0xc665e7)
+
+l_0xc665e7:
+    "@So you made it back alive.{pause(20)}  You must have many stories to tell." next
+    "@Let's get together for a drink,{pause(15)} when you have a chance so I can hear your stories." next
+    "@...I'm talking about drinking mineral water.{pause(15)}  I'm still under age,{pause(15)} you know.{wait}{set(flag 4)}" eob
+
+l_0xc66670:
+    "[06 BE 00 {e(data_32.l_0xc7c588)}]{counter(1)}" call(data_33.l_0xc7dc7f) "[1B 03 {e(data_22.l_0xc690a6)}]{music(155)}@You finally got here." next
+    "@This is the first <Your Sanctuary> location.{pause(20)}  But it's mine now." next
+    "@Take it from me,{pause(30)} if you dare...[03]" call(data_21.l_0xc68409) "[1B 03 {e(data_21.l_0xc683de)}][1F 1E D1 00 08]{pause(120)}{set(flag 190)}" eob
+
+l_0xc666ea:
+    "{window_open(1)}@...So [1C 02 01] buddy,{pause(15)} I've found proof of a great treasure... a huge haul..." next
+    "@yah,{pause(15)} hah,{pause(10)} hah...{pause(20)}" linebreak
+    "  I'll show you,{pause(15)} but you're the only one.{pause(20)}  C'mon.[03]{window_closeall}" call(data_15.l_0xc5f642) "{unset(flag 307)}{set(flag 308)}" eob
+
+l_0xc66762:
+    "[06 49 00 {e(data_27.l_0xc73ab9)}][06 D2 00 {e(l_0xc6681d)}]@If this is a sign of what lies below,{pause(15)} I just need a little time." next
+    "@My destiny is to find and dig up the buried treasure." next
+    "@I'll eat garlic and work out to help strengthen myself." next
+    "@Go home now.{pause(20)}  You're getting in the way of my work." next
+    "@You may start to get greedy thoughts..." end
+
+l_0xc6681d:
+    "{counter(1)}" call(data_33.l_0xc7dc7f) "[1B 03 {e(l_0xc66a06)}][06 02 00 {e(l_0xc668e4)}][06 65 00 {e(l_0xc66980)}]@Hey [1C 02 01],{pause(15)} pal." next
+    "@There was a man who insisted that he buy the golden statue,{pause(15)} so I sold it to him." next
+    "@It's not that I needed the money..." next
+    "@It's just that his unbridled mania affected me." next
+    "@As you know,{pause(15)} I'm a sucker for sentiment." next
+    "@Bye, for now.{wait}{set(flag 101)}{set(flag 2)}" eob
+
+l_0xc668e4:
+    "@Hey [1C 02 01],{pause(15)} pal." next
+    "@There was a man who insisted that he buy the golden statue,{pause(15)} so I sold it to him." next
+    "@It's not that I needed the money..." next
+    "@It's just that his mania affected me." next
+    "@As you know,{pause(15)} I'm a sucker for sentiment." next
+    "@Bye, for now." end
+
+l_0xc66980:
+    "@I haven't been able to get my hands on the treasure..." next
+    "@But when I do a job,{pause(15)} I do it well.{pause(20)}  I'm a{pause(10)} man{pause(5)}'s man." next
+    "@When the game is over,{pause(15)} I may be a hero." next
+    "@You might ignore me now,{pause(15)} but you'll see later..." end
+
+l_0xc66a06:
+    "@Go ahead and laugh at me." next
+    "@But when I do a job,{pause(15)} I do it well.{pause(20)}  I'm a{pause(10)} man{pause(5)}'s man." next
+    "@When the game is over,{pause(15)} I may be a hero." next
+    "@You might ignore me now,{pause(15)} but you'll see later..." next
+    eob
+
+l_0xc66a83:
+    "@(The Golden Statue is glowing strangely...){sound(113)}" end
+
+l_0xc66aa4:
+    "[06 49 00 {e(data_28.l_0xc7625e)}][06 B4 02 {e(l_0xc66bc0)}][06 B5 02 {e(l_0xc66c7d)}][06 78 02 {e(l_0xc66b33)}][06 61 00 {e(data_28.l_0xc76112)}][06 D6 01 {e(l_0xc66afe)}]@H[B6]ka,{pause(10)} tes[B8].{pause(20)}  A hang fel[B6]bresztette?" next
+    "@Kiakadt[B5]l?{wait}{set(flag 470)}" eob
+
+l_0xc66afe:
+    "@Gondolod, hogy anya hagyja, hogy k[B6]s[BC]n maradjak ma este?" next
+    "@[B4]gy t[BD]nik, nem tudok visszafek[BF]dni." end
+
+l_0xc66b33:
+    "@Csak abban tudok seg[B7]teni, hogy itt tartsam a cuccodat..." next
+    "@T[B5]mogatlak teljes sz[B7]vvel.{pause(20)}  Ne [BF]sd le magad." next
+    "@... er[BC]s leszek, am[B7]g elment[B6]l." next
+    goto(data_18.l_0xc64672)
+
+l_0xc66b97:
+    "@Valaki kopog az ajt[B8]n.{pause(20)}  Milyen ideges[B7]t[BC] kopog[B5]s!" end
+
+l_0xc66bc0:
+    "@H[B6] tes[B8]... te itt vagy a [1C 05 B8][B6]rt,{pause(15)} nem igaz?" linebreak
+    "[19 02]Igen[02] [19 02]Nem[02][1C 07 02][11]{clearline}[09 02 {e(l_0xc66c15)} {e(l_0xc66bf6)}]" goto(l_0xc66bf6)
+
+l_0xc66bf6:
+    "@[B3],{pause(15)} nem vagy itt [B6]rte?{pause(20)} ...k[B6]szen [B5]lltam odaadni neked..." end
+
+l_0xc66c15:
+    "[1D 03 FF][1B 02 {e(l_0xc66d2b)}]@Itt van a [1C 05 B8].{pause(20)}  Mire fogod haszn[B5]lni?" next
+    "@Bocs...{pause(15)}  T[B6]nyleg nem szabad [B6]rdekl[BC]dn[BE]m az [BF]gyf[B6]l mag[B5]n[BF]gyeir[BC]l.[03][1D 0E 00 B8]{sound(116)}{pause(60)}{unset(flag 692)}" eob
+
+l_0xc66c7d:
+    "@H[B6],{pause(10)} tes[B8].{pause(20)}  te itt vagy a <[1C 05 AF],>[B6]rt,{pause(15)} nem igaz?" linebreak
+    "[19 02]Igen[02] [19 02]Nem[02][1C 07 02][11]{clearline}[09 02 {e(l_0xc66cc1)} {e(l_0xc66bf6)}]" goto(l_0xc66bf6)
+
+l_0xc66cc1:
+    "[1D 03 FF][1B 02 {e(l_0xc66d2b)}]@Itt van a <[1C 05 AF].>{pause(20)}  Mire fogod haszn[B5]lni?" next
+    "@Sorry.{pause(20)}  T[B6]nyleg nem szabad [B6]rdekl[BC]dn[BE]m az [BF]gyf[B6]l mag[B5]n[BF]gyeir[BC]l.[03][1D 0E 00 AF]{sound(116)}{pause(60)}{unset(flag 693)}" eob
+
+l_0xc66d2b:
+    "@[B4]gy t[BD]nik, t[B9]l sok cuccot van a hordoz[B5]shoz!" end
+
+l_0xc66d3e:
+    "[06 EE 02 {e(l_0xc66e13)}][06 D7 01 {e(l_0xc66df2)}]@Mi volt ez a zaj?" next
+    "@[1C 02 01],{pause(15)} [B9]gy t[BD]nik, nem f[B6]lsz. {pause(20)}  Meg[BC]r[BF]lt[B6]l?" next
+    "@[B1]s most el akarsz menni megn[B6]zni?{pause(15)}  ...[B8]{pause(15)} ...j[B8]lvan." next
+    "@[B4]gyis kisurransz a szob[B5]db[B8]l, m[B6]g akkor is,{pause(15)} ha megk[B6]rtem, hogy ne tedd." next
+    "@Legal[B5]bb v[B5]lts[B5]l ki a pizsam[B5]b[B8]l, miel[BC]tt elm[B6]sz.[03]{window_closeall}{pause(1)}{set(flag 471)}{unset(flag 749)}[1F 21 C4]" eob
+
+l_0xc66df2:
+    "@L[B6]gy [B8]vatos!{pause(20)}  Gyere haza, amint lehet." end
+
+l_0xc66e13:
+    "@Mi volt ez a zaj?" next
+    "@[B4]gy t[BD]nik, egy[B5]ltal[B5]n nem f[B6]lsz.{pause(20)}  L[B6]gy [B8]vatos!" end
+
+l_0xc66e40:
+    "@[C3]dv itthon,{pause(15)} [1C 02 01]." next
+    "@Ma este nem sz[BF]ks[B6]ges err[BC]l besz[B6]lni." next
+    "@K[B6]s[BC] van,{pause(20)} rohan le az [B5]gyba." linebreak
+    "[19 02]Igen[02] [19 02]Nem[02][1C 07 02][11]{clearline}[09 02 {e(l_0xc66eca)} {e(l_0xc66e9f)}]" goto(l_0xc66e9f)
+
+l_0xc66e9f:
+    "@[B3],{pause(15)} [1C 02 01].{pause(20)}  Nem [B6]rted a j[B8] [B6]jszakai alv[B5]s fontoss[B5]g[B5]t!" end
+
+l_0xc66eca:
+    "{window_closeall}[1F 07 03]{set(flag 295)}{set(flag 469)}{set(flag 530)}{unset(flag 474)}{set(flag 473)}{set(flag 468)}{set(flag 749)}{unset(flag 11)}{unset(flag 517)}[1F 15 6A 00 79 02 01][1F 61]{pause(120)}[1F EB FF 06][1F 15 6A 00 FD 02 01][1F 61][1F 21 51]{pause(180)}[1F 15 B5 01 0B 03 FF][1F 21 C4][1F E5 FF]{pause(1)}[1F 1F B5 01 06][1F EC FF 01]" eob
+
+l_0xc66f20:
+    "@Nem tudod h[B5]ny [B8]ra van?!{pause(20)}  H[B9]zzd a seggeded otthon, azonal!" end
+
+l_0xc66f4a:
+    "@Haza akarok t[B6]rni,{pause(15)} de az [B9]t le van z[B5]rva." next
+    "@Az emberek t[B9]l komolyan veszik ezt a meteorithelyzetet!" end
+
+l_0xc66f90:
+    "@Ne ess p[B5]nikba!{pause(20)}  Ez csak egy...{pause(20)} mi?!...  meteorit, ami...{pause(20)} ki?!... leesett." next
+    "@Csak akarok...{pause(15)}mivan?!{pause(20)} ...hazamenni..." end
+
+l_0xc66fe2:
+    "@Az Onett rend[BC]rs[B6]g h[B7]rhedt az utak bez[B5]r[B5]s[B5]r[B8]l, ha valami t[BE]rt[B6]nik." next
+    "@A vil[B5]grekordra t[BE]reksz[BF]nk..." end
+
+l_0xc67026:
+    "@Hallottad az [BC]srobban[B5]st?{pause(20)}" linebreak
+    "  Szerintem egy meteorit landolt a k[BE]zelben." next
+    "@Els[BC]nek akarom l[B5]tni.{pause(15)}  [B3]k[B6]?" next
+    "@Megpr[B8]b[B5]lom els[BC]k[B6]nt oda[B6]rni..." end
+
+l_0xc67089:
+    "@Egy meteorit lesz[B5]llt,{pause(15)} a Sharkok vadul szaladg[B5]lnak a v[B5]rosban," next
+    "@ti, gyerekek k[B8]borolnak,{pause(15)} [B6]s,{pause(15)} [B6]hes vagyok...{pause(20)}" linebreak
+    "  Ut[B5]lom a munk[B5]m!" end
+
+l_0xc670e6:
+    "[06 D8 01 {e(l_0xc67130)}]@Vesz[B6]lyes a dombtet[BC]re menni." next
+    "@M[B6]g akkor is, ha azt tan[B5]csolom,{pause(15)} nem [B5]ll[B7]t meg,{pause(15)} ugye?" end
+
+l_0xc67130:
+    "@[B0]{pause(5)}a{pause(5)}a{pause(5)}a{pause(5)}a{pause(5)}h{pause(15)}--h..." next
+    "@Ha [B7]gy [B5]s[B7]tok ...{pause(20)} [B9]gy t[BD]nik, hogy csak l[B8]gok." next
+    "@[B0]{pause(5)}a{pause(5)}a{pause(5)}a{pause(5)}a{pause(5)}h{pause(15)}--h..." linebreak
+    "  ...ja,{pause(15)} pontosan..." end
+
+l_0xc67194:
+    "@H[B6], te!{pause(15)}  Nem tudod mennyi az id[BC]?" end
+
+l_0xc671ad:
+    "@Takarodj az utamb[B8]l." linebreak
+    "Takarodj az utamb[B8]l." linebreak
+    "Takarodj az utamb[B8]l." next
+    "@Utamb[B8]l az takarodj." next
+    "@Hopp[B5],{pause(15)} t[B6]vedtem...{pause(20)}" linebreak
+    "  [B4]gy [B6]rtem <takarodj az utamb[B8]l!>" end
+
+l_0xc67229:
+    "@Shh.{pause(15)}  Shh!" end
+
+l_0xc67237:
+    "@Id[BC]ben j[BE]tt[B6]l,{pause(15)} [1C 02 01].{pause(20)}  Csin[B5]lsz valamit Pokey ellen?" next
+    "@[BA] meg[BC]r[B7]t.{pause(20)}  Bar[B5]tok vagytok?" linebreak
+    "[19 02]Igen[02] [19 02]Dehogynem[02][1C 07 02][11]{clearline}[09 02 {e(l_0xc672cc)} {e(l_0xc6729b)}]" goto(l_0xc6729b)
+
+l_0xc6729b:
+    "@Nem vagytok bar[B5]tok,{pause(15)} de nem vagytok szomsz[B6]dok?" next
+    "@Gyer[BF]nk,{pause(15)} seg[B7]ts itt!" end
+
+l_0xc672cc:
+    "@[B1]s te a h[B5]zban laksz az [BE]v[B6] mellett...{pause(20)}  [B1]rtem..." end
+
+l_0xc672eb:
+    "@Ez a meteorit m[B5]sk[B6]pp n[B6]z ki, mint m[B5]skor." next
+    "@Furcsa [B6]s csod[B5]latos...{pause(20)} valamint titokzatos... " linebreak
+    "  {pause(20)}o{pause(5)}o{pause(5)}o{pause(5)}o{pause(5)}o!..." end
+
+l_0xc67349:
+    "[06 D8 01 {e(l_0xc6739f)}]@H[B6],{pause(15)} [1C 02 01]." next
+    "@Ne l[B6]gy gumis.{pause(20)}  A rend[BC]r[BE]k--{pause(15)} hopp[B5]..." next
+    "@[B4]gy [B6]rtem a tiszt [B9]tj[B5]ra l[B6]psz!" next
+    "{set(flag 472)}{set(flag 474)}" goto(l_0xc6739f)
+
+l_0xc6739f:
+    "@Most hazamehetz." next
+    "@Holnap,{pause(5)} [B6]n,{pause(15)} Pokey,{pause(15)} t[BE]bbet mondok majd a furcsa meteoritr[B8]l. " next
+    "@J[B8]l vagyok itt,{pause(15)} de te bugyuta a tiszteket!" end
+
+l_0xc673f9:
+    "[06 D8 01 {e(l_0xc674aa)}][06 02 00 {e(l_0xc67412)}]@[B3],{pause(15)} hell[B8]." next
+    goto(l_0xc67412)
+
+l_0xc67412:
+    "@Pokey,{pause(5)} a testv[B6]rem, kiszaladt innen, hogy [BF]ld[BE]zzen egy rend[BC]raut[B8]t. " next
+    "@Azt mondta:{pause(5)} <Picky,{pause(15)} maradj otthon.>{pause(15)}  Teh[B5]t otthon vagyok, [B6]s figyelem a h[B5]zunkat." next
+    "@Anya [B6]s apa m[B6]g nincsenek otthon.{pause(20)}  Kimentek egy eleg[B5]ns [B6]tterembe.{wait}{set(flag 2)}" eob
+
+l_0xc674aa:
+    "@Nagyon [B5]lmos vagyok..." next
+    "@Anya [B6]s apa m[B6]g nem j[BE]ttek vissza a v[B5]rosb[B8]l." next
+    "@Pokey kifutott,{pause(15)} [B6]s nem t[B6]rt vissza.{pause(20)}  Azon gondolkodom, hogy lefekszek." end
+
+l_0xc67501:
+    "{music(124)}[1F 15 2F 01 6E 02 01][1F 61]{pause(30)}{window_open(1)}{music(155)}@It's been a long time,{pause(15)}" linebreak
+    "  Buzz Buzz. " next
+    "@You've been successful at foiling Master Giygas' plans." next
+    "@But...{pause(20)}  Buzz Buzz,{pause(15)} you must now surrender." next
+    "@You're no longer a hero,{pause(15)} but just a useless insect." next
+    "@I'll stomp you hard!" next
+    "{window_closeall}" call(data_21.l_0xc685b4) "[1B 03 {e(data_21.l_0xc683de)}]{pause(1)}[1F F2 2F 01 7B 02]{pause(60)}[1F EA 5B 01]{window_open(1)}@Whew!...{pause(20)}  I was taking a big chance there..." next
+    "@He came from 10 years in the future to kill me,{pause(15)} so we can't relax yet!" next
+    "@From now on,{pause(15)} you'll be fighting enemies sent by Giygas," next
+    "@as well as humans who have evil thoughts." next
+    "@They'll definitely make trouble during your adventure!" next
+    "@Animals are also becoming violent" next
+    "@due to Giygas' influence over the evil in their minds!" next
+    "@It is the truth,{pause(15)} so listen!{wait}{window_closeall}" eob
+
+l_0xc676d4:
+    "@(Please take my son along." next
+    "@He may look like a regular,{pause(15)} small mouse," next
+    "@but he can lead you to an exit if you're lost in a maze.)" next
+    "[06 00 02 {e(l_0xc677cc)}]@(Will you take one of my sons along?)" linebreak
+    "[19 02]Yes[02] [19 02]No[02][1C 07 02][11]{clearline}[09 02 {e(l_0xc6777f)} {e(l_0xc67763)}]" goto(l_0xc67763)
+
+l_0xc67763:
+    "@(You understand that you don't need any money for this...)" end
+
+l_0xc6777f:
+    "[1D 03 FF][1B 02 {e(l_0xc67804)}][1D 0E 00 C5]@(He's a tough boy.{pause(20)}  You can treat him as one of your items.)" next
+    call(data_33.l_0xc7dccf) "{wait}{window_closeall}[1F F1 5F 00 71 02][1F 61][1F 1E 5F 00 06]{set(flag 512)}" eob
+
+l_0xc677cc:
+    "[1D 05 FF C5][1B 02 {e(l_0xc677eb)}]@(Oh,{pause(15)} you have him already.)" end
+
+l_0xc677eb:
+    "@(Didn't you leave my son with someone?)" end
+
+l_0xc67804:
+    "@(You have too many items.{pause(20)}  You can't take my son.)" end
+
+l_0xc67820:
+    "@(Trust me on the dark road.)" end
+
+l_0xc67836:
+    "@(O{pause(15)}o{pause(10)}o{pause(5)}o.{pause(20)}  Do I get to come along too?)" end
+
+l_0xc67859:
+    "@(Please take my son along." next
+    "@He may look like a regular,{pause(15)} small mouse," next
+    "@but he can lead you to an exit if you're lost in a maze.)" next
+    "[06 00 02 {e(l_0xc677cc)}]@(Will you take one of my sons along?)" linebreak
+    "[19 02]Yes[02] [19 02]No[02][1C 07 02][11]{clearline}[09 02 {e(l_0xc678ed)} {e(l_0xc67763)}]" goto(l_0xc67763)
+
+l_0xc678ed:
+    "[1D 03 FF][1B 02 {e(l_0xc67804)}][1D 0E 00 C5]@(He's a tough boy.  You can treat him as one of your items.)" next
+    call(data_33.l_0xc7dccf) "{wait}{window_closeall}[1F F1 43 03 71 02][1F 61][1F 1E 43 03 06]{set(flag 512)}" eob
+
+l_0xc67938:
+    "@(Please take my son along." next
+    "@He may look like a regular,{pause(15)} small mouse," next
+    "@but he can lead you to an exit if you're lost in a maze.)" next
+    "[06 00 02 {e(l_0xc677cc)}]@(Will you take one of my sons along?)" linebreak
+    "[19 02]Yes[02]  [19 02]No[02][1C 07 02][11]{clearline}[09 02 {e(l_0xc679cd)} {e(l_0xc67763)}]" goto(l_0xc67763)
+
+l_0xc679cd:
+    "[1D 03 FF][1B 02 {e(l_0xc67804)}][1D 0E 00 C5]@(He's a tough boy. {pause(15)} You can treat him as one of your items.)" next
+    call(data_33.l_0xc7dccf) "{wait}{window_closeall}[1F F1 A2 02 71 02][1F 61][1F 1E A2 02 06]{set(flag 512)}" eob
+
+l_0xc67a1c:
+    "@Welcome to Onett Hospital.{pause(20)}  I run the place." next
+    "[06 02 00 {e(l_0xc67a4d)}][06 DE 02 {e(l_0xc67a7b)}]" goto(l_0xc67a4d)
+
+l_0xc67a4d:
+    "@Ah...{pause(5)} gotcha!!{pause(15)}  Sorry.{pause(20)}  I'm just a patient here.{wait}{set(flag 734)}{set(flag 2)}" eob
+
+l_0xc67a7b:
+    "@Have I told you this joke already?{pause(15)}  Oh, sorry..." end
+
+l_0xc67aa0:
+    "[06 49 00 {e(l_0xc67ac1)}]@I was SMAAAAASH{pause(10)}ED by a mouse." end
+
+l_0xc67ac1:
+    "@My SMAAAAASH wound will soon heal." end
+
+l_0xc67add:
+    "[06 02 00 {e(l_0xc67aeb)}][06 DF 02 {e(l_0xc67b5e)}]" goto(l_0xc67aeb)
+
+l_0xc67aeb:
+    "@What?{pause(20)}  You're here to visit my daughter?" next
+    "@So you're the one who calls her in the middle of the night and talks for hours!" next
+    "@...oh,{pause(15)} it's not you.{pause(20)}  Then why did you come to this room?{wait}{set(flag 735)}{set(flag 2)}" eob
+
+l_0xc67b5e:
+    "@It's you again." end
+
+l_0xc67b67:
+    "@(Kincs vad[B5]sz!{pause(20)}  Ez Lier X. Agerate h[B5]za!)" end
+
+l_0xc67b91:
+    "@(Looks like quite a piece of work...)" end
+
+l_0xc67bad:
+    "@Do Not Enter" end
+
+l_0xc67bb9:
+    "@I heard there's a guy who stops to read each bulletin board he encounters." next
+    "@Then he says,{pause(15)} <check-a-roony!>{pause(20)}  Is that you?" end
+
+l_0xc67c0c:
+    "@Oh,{pause(15)} oh...{pause(20)}  The road's closed again." next
+    "@It's Onett's claim to fame!" end
+
+l_0xc67c40:
+    "@You've found an old magazine." next
+    "@Are you going to read it?" linebreak
+    "[19 02]Yes[02][19 02]No[02][1C 07 02][11]{clearline}[09 02 {e(l_0xc67c98)} {e(l_0xc67c7d)}]" goto(l_0xc67c7d)
+
+l_0xc67c7d:
+    "@Good.{pause(20)}  That may be the best choice." end
+
+l_0xc67c98:
+    next
+    "@<My Secret Life,{pause(15)} chapter three.>{pause(20)} (Story from the previous chapter.)" next
+    "@I was neither a murder suspect," next
+    "@nor a target for an international spy organization." next
+    "@But I drove a car down the Jersey Turnpike at 80 mph." next
+    "@...A police officer pulled me over and asked for my driver's license." next
+    "@He said I was going 20 mph over the speed limit." next
+    "@I instantly pointed to my wife and said <I'm in a hurry,{pause(15)} my wife is in labor.>" next
+    "@Fortunately,{pause(15)} my wife actually had a big stomach." next
+    "@I hoped he'd let me go with this excuse." next
+    "@<Oh,{pause(15)} since it's an emergency." next
+    "@I'll lead you to the hospital with my police car,>{pause(15)} he said." next
+    "@<No,{pause(15)} it's not necessary.>{pause(20)}" linebreak
+    "  <Why not?>{pause(15)} asked the officer." next
+    "@<Uh...{pause(15)} well...>{pause(30)}" linebreak
+    "  <Let's get going,>{pause(15)} said the officer..." next
+    "@<No,{pause(15)} no!{pause(20)}  We can't!{pause(30)}  This baby is a demon child!>" end
+
+l_0xc68000:
+    "{counter(7)}" call(l_0xc68017) eob
+
+l_0xc68008:
+    "{counter(7)}[06 AF 02 {e(data_22.l_0xc68e1c)}]" goto(l_0xc68017)
+
+l_0xc68016:
+    eob
+
+l_0xc68017:
+    "[19 10 01]{rtoarg}@[1C 02 00] picked up the receiver." next
+    "{sound(11)}" call(data_17.l_0xc63029) eob goto(l_0xc6803d)
+
+l_0xc6803d:
+    "{open_wallet}[1D 14 01 00 00 00][1B 03 {e(l_0xc68077)}][19 10 01]{swap}@[1C 02 00] picked up the receiver." next
+    "[1D 09 01 00]{open_wallet}{sound(11)}" call(data_17.l_0xc63033) eob goto(l_0xc68077)
+
+l_0xc68077:
+    "@(The pay phone costs one dollar.)" end
+
+l_0xc68091:
+    "[06 0E 00 {e(l_0xc6809e)}]" call(data_17.l_0xc630ae) eob
+
+l_0xc6809e:
+    "{counter(6)}" call(l_0xc68017) eob
+
+l_0xc680a6:
+    "[1D 05 FF B1][1B 03 {e(data_17.l_0xc62d30)}]@Please insert your ATM card." end
+
+l_0xc680c2:
+    "[19 19 00 00]{swap}{result_is(177)}[1B 03 {e(data_21.l_0xc680dc)}]@Nothing happened." end goto(data_21.l_0xc680dc)
+

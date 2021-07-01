@@ -1,0 +1,55 @@
+import asm65816
+
+//Allows you to change the text and the alignment of the text in the status menu.
+//Text is aligned using the "text_pos (x, y)" command.
+//x is the horizontal alignment, measured in pixels.
+//y is the vertical alignment, measured in rows (of 16 pixels each).
+
+
+ROM[0xC19551] = ASMLoadAddress0E(StatusNameAlign)
+
+StatusNameAlign:
+text_pos (8, 0)
+"Szint:"
+
+text_pos (22, 3)
+" Hit pontok:"
+
+text_pos (21, 4)
+" Pszich[B6] pontok:"
+
+text_pos (4, 5)
+"Tapasztalati pontok:"
+
+text_pos (56, 6)
+"Tpsztlt. a k[BE]v. szintre"
+
+text_pos (160, 0)
+"S[B6]rt[B6]s:"
+
+text_pos (160, 1)
+"V[B6]delem:"
+
+text_pos (160, 2)
+"Sebess[B6]g:"
+
+text_pos (160, 3)
+"B[B5]t[B8]s[B5]g:"
+
+text_pos (160, 4)
+"[B1]leter[BC]:"
+
+text_pos (160, 5)
+"IQ:"
+
+text_pos (159, 6)
+"Szerencse:"
+eob
+
+
+command ASMLoadAddress0E(Address) {
+	LDA_i	(short[0] Address)
+	STA_d	(0x0E)
+	LDA_i	(short[1] Address)
+	STA_d	(0x10)
+}

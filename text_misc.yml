@@ -1,0 +1,128 @@
+Ailments:
+  Ailment 01: '[C2]ntudatlan'
+  Ailment 02: Gy[B6]m[B5]ntozott
+  Ailment 03: B[B6]nult
+  Ailment 04: H[B6]nyinger
+  Ailment 05: M[B6]rgezett
+  Ailment 06: Napsz[B9]r[B5]s
+  Ailment 07: Szipog[B5]s
+  Ailment 08: Gomb[B5]s
+  Ailment 09: Megsz[B5]llott
+  Ailment 10: Honv[B5]gy
+Battle Menu:
+  Auto Fight: 'Aut[B8] harc'
+  Bash: '[C3]t[B6]s'
+  Defend: V[B6]dkz.
+  Do Nothing: Semmi
+  Goods: Cuccok
+  Mirror: Visszat[BF]kr.
+  PSI: PK
+  Pray: Im[B5]dkozni
+  Run Away: Elfutni
+  Shoot: L[BE]lni
+  Spy: K[B6]mkedni
+Equip Menu:
+  Arms: '    Karok'
+  Arms Window Title: Karok
+  Body: '      Test'
+  Body Window Title: Test
+  Defense: V[B6]delem
+  No Equip: '(Semmi) '
+  Offense: 'S[B6]rt[B6]s'
+  Other: '     M[B5]s'
+  Other Window Title: M[B5]s
+  To: 'Ki?:'
+  Unequip: Semmi
+  Weapon: ' Fegyver'
+  Weapon Window Title: Fegyver
+Item Menu:
+  Drop: Dobni
+  Give: Addni
+  Help: SOS!
+  Use: Hszn.
+Menu Action Targets:
+  Where: 'Hol? '
+  Where 2: 'Hol? '
+  Which: 'Mit? '
+  Who: 'Ki? '
+  Whom: 'Kit? '
+Other:
+  Lumine Hall Text: '[B1]n... hossz[B9] [B9]t vezetett ide... Hamarosan [B6]n...  Hamarosan,
+    [B6]n...  Hamarosan [B6]n...  Mi lesz vel[BF]nk?  M... mi t[BE]rt[B6]nik? 
+    Gondolataimat ki[B7]rj[B5]k a falra ...  vagy m[B6]gis?'
+  Player Name Prompt: K[B6]rj[BF]k, regisztr[B5]lja a nev[B6]t
+Out of Battle Menu:
+  Check: Csekk
+  Equip: Flszrlni.
+  Goods: Cuccok
+  PSI: PSI
+  Status: '[B0]llapot'
+  Talk to: 'Besz[B6]lni'
+PSI Menu:
+  PP Cost: PP [B5]r
+  Row Back: a H[B5]ts[B8] sor
+  Row Front: az Els[BA] sor
+  Row To: 'Ki?'
+  To all enemies: Minden ellens[B6]gnek
+  To all of us: Mindannyiunknak
+  To all of us 2: Mindannyiunknak
+  To enemy: Ellens[B6]gnek
+  To one enemy: Egy ellens[B6]gnek
+  To one enemy 2: Egy ellens[B6]gnek
+  To one of us: Egyik[BF]nknek
+  To one of us 2: egy bar[B5]tnak
+  To row of foes: Ellens[B6]ges sorba
+  himself: saj[B5]t maga
+PSI Types:
+  Assist: Seg[B7]t[B6]s
+  Offense: S[B6]rt[B6]s
+  Other: M[B5]s
+  Recover: Gy[B8]gy.
+Starting Text:
+  Ask Name 1: 'K[B6]rem, nevezzd meg.'
+  Ask Name 2: 'Nevezzd el [BC]t is.'
+  Ask Name 3: 'Mi a haverod neve?'
+  Ask Name 4: '[B1]s a m[B5]sik haverod?'
+  Ask Name Food: Mi a kedvenc [B6]teled?
+  Ask Name PSI: Mi a kedvenc dolgod?
+  Ask Name Pet: 'Nevezzd meg a kedvenc[B6]t.'
+  Confirm All: K[B6]sz van?
+  Confirm All No: Nem
+  Confirm All Yes: Igen
+  Confirm Delete: Biztos, hogy t[BE]r[BE]lni akarod?
+  Confirm Delete No: 'Nem'
+  Confirm Delete Yes: 'Igen'
+  Confirm Food: 'Kedvenc [B6]tel:'
+  Confirm PSI: 'Kedvenc dolog:'
+  Continue: Folytatni
+  Copy: 'M[B5]s.'
+  Copy to where?: 'Hova m[B5]sol?'
+  Delete: 'T[BE]r[BE]lni'
+  Select Sound: 'V[B5]lasz hangbe[B5]ll[B7]t[B5]st.'
+  Select Sound Mono: 'Mon[B8]'
+  Select Sound Stereo: 'Stere[B8]'
+  Select Speed: 'V[B5]lasz texttemp[B8]t.'
+  Select Style: 'Melyik st[B7]lust akarsz az ablaknak?'
+  Set Up: 'Be[B5]ll[B7]t[B5]s'
+  Start New Game: '[B4]j j[B5]t[B6]k'
+  Text Speed: 'Texttemp[B8]: '
+  Text Speed Fast: Gyors
+  Text Speed Medium: 'K[BE]zep.'
+  Text Speed Slow: Lass[B9]
+Status Window:
+  Defense: ''
+  Exp. for next level: ''
+  Experience Points: ''
+  Guts: ''
+  Hit Points: ''
+  IQ: ''
+  Level: ''
+  Luck: ''
+  Offense: ''
+  PSI Prompt: '@Nym. meg az A gmb. a PSI info[B6]rt.'
+  Psychic Points: ''
+  Speed: ''
+  Vitality: ''
+Window Titles:
+  Escargo Express Window Title: T[B5]rolt cucc
+  Phone Window Title: 'Hvn.:'
